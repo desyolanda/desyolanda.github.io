@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Desy Yolanda's Portfolio</title>
+  <title>DESYOLANDA</title>
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -21,7 +21,7 @@
 
 
 <body>
-  <div class="container">
+  <div style="width: 100%; position: relative;" class="container">
 
 
     <!------------------------NAVBAR TABS----------------------->
@@ -40,16 +40,16 @@
 
     <div class="row">
       <ul>
-        <!-- <li><a href="#home">RESUME</a></li> -->
-        <li><a href="#news">ABOUT</a></li>
+        <!-- <li><a href="resume.html">RESUME</a></li> -->
+        <li><a href="about.html">ABOUT</a></li>
         <li class="dropdown">
           <a href="" class="dropbtn">WORKS</a>
           <div class="dropdown-content">
             <a href="artists.html">FEMALE ARTISTS' ARTWORKS</a>
-            <a href="#">COMFOOD APP</a>
-            <a href="#">GLITCHED WEBSITE</a>
-            <a href="#">BREWERY CAR WRAP</a>
-            <a href="#">TOPSHOP CATALOG</a>
+            <a href="comfood.html">COMFOOD APP</a>
+            <a href="epub.html">EPUB MAGAZINE</a>
+            <a href="visual.html">DATA VISUALIZATION</a>
+
 
           </div>
         </li>
@@ -61,117 +61,152 @@
 
     <!-----------------------INTRO----------------------------->
 
-    <div class="row">
-      <div id="intro">
-        <section id="introText">
-          <div id="hi">
-            <h2>Hi! I'm Desy Yolanda,</h2>
-          </div>
-          <div id="job">
-            <h2>A</h2>
-            <h2>Graphic Designer.</h2>
+    <div id="intro">
+      <section id="introText">
+        <div class="row">
+            <div class="col-sm-12 hi">
+              <h2>Hi! I'm Desy</h2>
+              <h2>Yolanda,</h2>
+              <h2>&#8595</h2>
+
+              <!------------------------HOVER TABS----------------------->
+
+              <div class="row">
+
+
+                <div class="tab">
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="artists.html"><button class="tablinks" onmouseover="openCity(event, 'Artists')">Female Artists' Artworks</button></a>
+                  </span>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="comfood.html"><button class="tablinks" onmouseover="openCity(event, 'Comfood')">Comfood App</button></a>
+                  </span>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="epub.html"><button class="tablinks" onmouseover="openCity(event, 'EPub')">EPub Magazine</button></a>
+                  </span>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="visual.html"><button class="tablinks" onmouseover="openCity(event, 'Visual')">Data Visualization</button></a>
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div id="Artists" class="tabcontent">
+                  <div class="gridContainer">
+                    <img class="hoverImg" src="img/artists_mockup.jpg" />
+                    <img class="hoverImg" src="img/artists_process.jpg" />
+                    <img class="hoverImg" src="img/fin_style2.jpg" />
+                    <img class="hoverImg" src="img/final_imp3.jpg" />
+                    <img class="hoverImg" src="img/wireframe1_3.jpg" />
+                    <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgimg.png" />
+                    <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgimg.png" />
+                  </div>
+                </div>
+
+                <div id="Comfood" class="tabcontent">
+                  <div class="grid-container">
+                    <img class="hoverImg" src="img/comfood_userflow.jpg" />
+                    <img class="hoverImg" src="img/comfood_moodboard.jpg" />
+                    <img class="hoverImg" src="img/comfood_sketch.jpg" />
+                    <img class="hoverImg" src="img/comfood_hifi1.jpg" />
+                    <img class="hoverImg" src="img/comfood_style.jpg" />
+                    <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgimg.png" />
+                    <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgimg.png" />
+
+                  </div>
+                </div>
+
+                <div id="EPub" class="tabcontent">
+                  <div class="grid-container">
+                    <img class="hoverImg" src="img/epub_p1.jpg" />
+                    <img class="hoverImg" src="img/epub_moodboard.jpg" />
+                    <img class="hoverImg" src="img/epub_style.jpg" />
+                    <img class="hoverImg" src="img/epub_l2.jpg" />
+                    <img class="hoverImg" src="img/epub_mockup.jpg" />
+                    <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgimg.png" />
+                    <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgimg.png" />
+
+
+
+
+                  </div>
+                </div>
+
+                <div id="Visual" class="tabcontent">
+                  <div class="grid-container">
+                    <img class="hoverImg" src="img/visual_comp1.jpg" />
+                    <img class="hoverImg" src="img/visual_final.jpg" />
+                    <img class="hoverImg" src="img/visual_code1.jpg" />
+                    <img class="hoverImg" src="img/visual_source.jpg" />
+                    <img class="hoverImg" src="img/visual_moodboard.jpg" />
+                    <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgimg.png" />
+                    <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgimg.png" />
+                  </div>
+                </div>
+
+                <!-- <div id="ePub" class="tabcontent">
+                  <div class="grid-container">
+                    <img class="hoverImg" src="img/kettle1.png" />
+                    <img class="hoverImg" src="img/kettle2.png" />
+                    <img class="hoverImg" src="img/kettle3.png" />
+                    <img class="hoverImg" src="img/kettle4.png" />
+                  </div>
+                </div> -->
+                <div class="clearfix"></div>
+
+              </div>
+            </div>
+
+            <div class="w-100">
+            </div>
+
+            <div style="text-align: right; width: 100%; postion: absolute; margin-top: -705px;" class="col-sm-6 hi">
+              <h2>A</h2>
+              <h2>VISUAL</h2>
+              <h2>DESIGNER</h2>
+              <img id="footerImg" src="img/bgImg.png" />
+
+              <div class="row">
+                <footer>
+
+                  © 2023 Desy Yolanda. All Rights Reserved.
+                </footer>
+              </div>
+            </div>
+
+
+      </section>
+  </div>
+  </div>
+
+
+  <!-- <div id="job">
+            <h2>VISUAL</h2>
+            <h2>DESIGNER.</h2>
             <img id="footerImg" src="img/bgImg.png" />
 
             <div class="row">
               <footer>
 
-            © 2023 Desy Yolanda. All Rights Reserved.
+                © 2023 Desy Yolanda. All Rights Reserved.
               </footer>
             </div>
 
 
           </div>
-        </section>
+        </section> -->
 
-        <section id="introArrow">
+  <!-- <section id="introArrow">
           <h2>&#8595</h2>
-        </section>
-
-      </div>
-    </div>
-
-    <!------------------------HOVER TABS----------------------->
-
-    <div class="row">
-
-
-      <div class="tab">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="artists.html"><button class="tablinks" onmouseover="openCity(event, 'Artists')">Female Artists' Artworks</button></a>
-        </span>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <button class="tablinks" onmouseover="openCity(event, 'Comfood')">Comfood App</button>
-        </span>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <button class="tablinks" onmouseover="openCity(event, 'CarWrap')">Brewery Car Wrap</button>
-        </span>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <button class="tablinks" onmouseover="openCity(event, 'Kettle')">Kettle Brand Packaging</button>
-        </span>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <button class="tablinks" onmouseover="openCity(event, 'ePub')">ePub Magazine</button>
-        </span>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div id="Artists" class="tabcontent">
-        <div class="gridContainer">
-          <img class="hoverImg" src="img/artists1.png" />
-          <img class="hoverImg" src="img/artists2.png" />
-          <img class="hoverImg" src="img/artists3.png" />
-          <img class="hoverImg" src="img/artists4.png" />
-          <img class="hoverImg" src="img/artists5.png" />
-        </div>
-      </div>
-
-      <div id="Comfood" class="tabcontent">
-        <div class="grid-container">
-          <img class="hoverImg" src="img/comfood1.png" />
-          <img class="hoverImg" src="img/comfood2.png" />
-          <img class="hoverImg" src="img/comfood3.png" />
-          <img class="hoverImg" src="img/comfood4.png" />
-          <img class="hoverImg" src="img/comfood5.png" />
-
-        </div>
-      </div>
-
-      <div id="CarWrap" class="tabcontent">
-        <div class="grid-container">
-          <img class="hoverImg" src="img/car1.png" />
-          <img class="hoverImg" src="img/car2.png" />
-          <img class="hoverImg" src="img/car3.png" />
-          <img class="hoverImg" src="img/car4.png" />
-
-        </div>
-      </div>
-
-      <div id="Kettle" class="tabcontent">
-        <div class="grid-container">
-          <img class="hoverImg" src="img/kettle1.png" />
-          <img class="hoverImg" src="img/kettle2.png" />
-          <img class="hoverImg" src="img/kettle3.png" />
-          <img class="hoverImg" src="img/kettle4.png" />
-        </div>
-      </div>
-
-      <div id="ePub" class="tabcontent">
-        <div class="grid-container">
-          <img class="hoverImg" src="img/kettle1.png" />
-          <img class="hoverImg" src="img/kettle2.png" />
-          <img class="hoverImg" src="img/kettle3.png" />
-          <img class="hoverImg" src="img/kettle4.png" />
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-    </div>
+        </section> -->
 
 
 
 
 
 
-    <!------------------------OVERLAY TABS----------------------->
 
-    <!----<div id="myNav" class="overlay">
+  <!------------------------OVERLAY TABS----------------------->
+
+  <!----<div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="#">About</a>
@@ -180,11 +215,6 @@
             <a href="#">Contact</a>
           </div>
         </div>------>
-
-
-
-
-
 
 
 
