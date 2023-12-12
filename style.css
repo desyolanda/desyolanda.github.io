@@ -145,7 +145,7 @@ h3{
   overflow: hidden;
   background-color: none;
   position: absolute;
-  z-index: 101;
+  z-index: 105;
   width: 50%;
 }
 
@@ -156,7 +156,8 @@ h3{
   color: #f2f2f2;
   /* background-color: #f2f2f2; */
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
+  padding: 10px;
   text-decoration: none;
   font-size: 25px;
   /* font-family: 'Playfair Display', serif; */
@@ -165,11 +166,15 @@ h3{
   letter-spacing: -2px;
 }
 
-.logo a:hover {
-  /* color: transparent;
-  text-shadow: 0 0 4px #f2f2f2; */
+/* .logo a:hover {
+  color: transparent;
+  text-shadow: 0 0 4px #f2f2f2;
   text-decoration: line-through;
   font-style: italic;
+} */
+
+.logo a:hover{
+  filter: blur(2px);
 }
 
 .navigation a {
@@ -538,7 +543,7 @@ footer {
   display: list-item;
   width: 100%;
   list-style-position: outside;
-  padding-inline-start: 1ch;
+  /* padding-inline-start: 1ch; */
 }
 
 .cert_list{
