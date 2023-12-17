@@ -52,6 +52,7 @@
           <div class="dropdown-content">
             <a href="artists.html">FEMALE ARTISTS' ARTWORKS</a>
             <a href="comfood.html">COMFOOD APP</a>
+            <a href="carwrap.html">ODELL'S CAR WRAP</a>
             <a href="epub.html">EPUB MAGAZINE</a>
             <a href="visual.html">DATA VISUALIZATION</a>
 
@@ -84,6 +85,8 @@
                   </span>
                   <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="comfood.html"><button class="tablinks" onmouseover="openCity(event, 'Comfood')">Comfood App</button></a>
                   </span>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="carwrap.html"><button class="tablinks" onmouseover="openCity(event, 'CarWrap')">Odell's Car Wrap</button></a>
+                  </span>
                   <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="epub.html"><button class="tablinks" onmouseover="openCity(event, 'EPub')">EPub Magazine</button></a>
                   </span>
                   <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <a href="visual.html"><button class="tablinks" onmouseover="openCity(event, 'Visual')">Data Visualization</button></a>
@@ -92,7 +95,7 @@
 
               </div>
 
-              <div class="row">
+              <!-- <div class="row"> -->
 
                 <div id="Artists" class="tabcontent">
                   <div class="gridContainer">
@@ -113,6 +116,19 @@
                     <img class="hoverImg" src="img/comfood_sketch.jpg" />
                     <img class="hoverImg" src="img/comfood_hifi1.jpg" />
                     <img class="hoverImg" src="img/comfood_style.jpg" />
+                    <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgImg.png" />
+                    <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgImg.png" />
+
+                  </div>
+                </div>
+
+                <div id="CarWrap" class="tabcontent">
+                  <div class="grid-container">
+                    <img class="hoverImg" src="img/car_mockup.jpg" />
+                    <img class="hoverImg" src="img/car_draft2.jpg" />
+                    <img class="hoverImg" src="img/car_moodboard.jpg" />
+                    <img class="hoverImg" src="img/car_sketch5.jpg" />
+                    <img class="hoverImg" src="img/car_photo3.jpg" />
                     <img class="hoverImg" style="filter: none; width: 250px;" src="img/bgImg.png" />
                     <img class="hoverImg" style="filter: none; width: 70%;" src="img/bgImg.png" />
 
@@ -157,24 +173,24 @@
                 </div> -->
                 <div class="clearfix"></div>
 
-              </div>
+              <!-- </div> -->
             </div>
 
             <div class="w-100">
             </div>
 
-            <div style="text-align: right; width: 100%; postion: absolute; margin-top: -705px;" class="col-sm-6 hi">
+            <div style="text-align: right; width: 100%; postion: absolute; margin-top: -650px;" class="col-sm-6 hi">
               <h2>A</h2>
               <h2>VISUAL</h2>
               <h2>DESIGNER</h2>
               <img id="footerImg" src="img/bgImg.png" />
 
-              <div class="row">
+              <!-- <div class="row"> -->
                 <footer>
 
                   © 2023 Desy Yolanda. All Rights Reserved.
                 </footer>
-              </div>
+              <!-- </div> -->
             </div>
 
 
@@ -231,6 +247,40 @@
 
 
   </div>
+
+<script>
+  //Intro
+  $(function() {
+
+   // apply spans
+     $("h2").lettering();
+
+     // hack to get animations to run again
+     $(".redraw").click(function() {
+       var el = $(this),
+          prev = el.prev(),
+          newone = prev.clone();
+       el.before(newone);
+       $("." + prev.attr("class") + ":first").remove();
+     });
+
+   var text = $("#intro"),
+     numLetters = text.find("span").length;
+
+   function randomBlurize() {
+   text.find("span:nth-child(" + (Math.floor(Math.random()*numLetters)+1) + ")")
+       .animate({
+         'textShadowBlur': Math.floor(Math.random()*25)+4,
+         'textShadowColor': 'rgba(255,101,89,' + (Math.floor(Math.random()*200)+55) + ')'
+       });
+   // Call itself recurssively
+   setTimeout(randomBlurize, 100);
+   } // Call once
+   randomBlurize();
+
+  });
+  </script>
+
   <script src="js/jquery.lettering.js"></script>
   <script src="js/modernizr-1.7.min.js"></script>
   <script src="js/color.js"></script>
