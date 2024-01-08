@@ -327,7 +327,7 @@ li.dropdown {
 
 #introText h2 {
   /* text-align: left; */
-  color: black;
+  color: rgba(255, 101, 89);
   /* display: block; */
   padding: 0px;
   font-size: 170px;
